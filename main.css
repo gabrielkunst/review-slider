@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #181a1b;
+  padding: 1rem 0;
+  color: white;
+}
+
+.title {
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-size: max(2rem, 2vw);
+  padding: 0.5rem;
+}
+
+.titleLine {
+  width: 10rem;
+  height: 0.2rem;
+  background-color: rgb(0, 255, 0);
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  background-color: #222;
+  width: 90vw;
+  max-width: 600px;
+  min-height: 35rem;
+  height: fit-content;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgb(0, 255, 0);
+}
+
+.wrapperImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 10;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.wrapperImage:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(42, 188, 42);
+  position: absolute;
+  top: -0.5rem;
+  right: -0.7rem;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+  border-radius: 50%;
+  border: 2px solid rgb(48, 52, 54);
+}
+
+.name,
+.job {
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.job {
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-size: max(1rem, 0.9vw);
+}
+
+.btn {
+  padding: 0.2rem 0.5rem;
+  font-size: max(2rem, 1.5vw);
+  margin: 0 0.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  border-radius: 1rem;
+  color: white;
+}
+
+.btn:hover {
+  border-color: rgb(0, 255, 0);
+}
+
+.surprise {
+  border: 2px solid rgb(0, 255, 0);
+  font-size: max(1rem, 1vw);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgba(48, 154, 48, 0.553);
+  font-weight: bold;
+}
+
+.surprise:hover {
+  padding: 1rem 3rem;
+  letter-spacing: 0.3rem;
+}
